@@ -1,0 +1,32 @@
+{
+  "name": "qa-template",
+  "version": "0.0.1",
+  "description": "Test suite for quality assurance in node.js.",
+  "scripts": {
+    "test": "mocha --opts test/mocha.opts test/**/*.spec.js",
+    "test:api": "mocha --opts test/mocha.opts test/api/*.spec.js",
+    "test:e2e": "",
+    "test:report": "mocha --opts test/mocha.opts test/**/*.spec.js --reporter mochawesome --reporter-options reportDir=test-report"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ortense/qa-template.git"
+  },
+  "author": "Marcus Ortense <marcus.ortense@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ortense/qa-template/issues"
+  },
+  "homepage": "https://github.com/ortense/qa-template#readme",
+  "dependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-polyfill": "^6.20.0",
+    "babel-preset-latest": "^6.16.0",
+    "chai": "^3.5.0",
+    "joi": "^10.2.0",
+    "joi-assert": "0.0.3",
+    "mocha": "^3.2.0",
+    "mochawesome": "^2.0.2",
+    "supertest": "^2.0.1"
+  }
+}
