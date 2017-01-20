@@ -17,6 +17,7 @@ coverage
 
 # test report
 teste-report
+test/e2e/reports
 
 # nyc test coverage
 .nyc_output
