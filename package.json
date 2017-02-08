@@ -1,35 +1,26 @@
 {
   "name": "qa-template",
   "version": "0.0.1",
-  "description": "Test suite for quality assurance in node.js.",
+  "description": "Testes End-to-End para tatuhub.com.br",
   "scripts": {
-    "test": "mocha --opts test/mocha.opts test/**/*.spec.js",
-    "test:api": "mocha --opts test/mocha.opts test/api/*.spec.js",
-    "test:e2e": "nightwatch --config test/e2e/nightwatch.conf.js test/e2e/specs/*.js",
-    "test:report": "mocha --opts test/mocha.opts test/**/*.spec.js --reporter mochawesome --reporter-options reportDir=test-report"
+    "test": "nightwatch --config test/e2e/nightwatch.conf.js test/e2e/specs/*.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ortense/qa-template.git"
+    "url": "git+https://github.com/ortense/tatuhub-e2e.git"
   },
   "author": "Marcus Ortense <marcus.ortense@outlook.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ortense/qa-template/issues"
+    "url": "https://github.com/ortense/tatuhub-e2e/issues"
   },
-  "homepage": "https://github.com/ortense/qa-template#readme",
+  "homepage": "https://github.com/ortense/tatuhub-e2e#readme",
   "dependencies": {
     "babel-cli": "^6.18.0",
     "babel-polyfill": "^6.20.0",
     "babel-preset-latest": "^6.16.0",
-    "chai": "^3.5.0",
     "chromedriver": "^2.27.2",
-    "joi": "^10.2.0",
-    "joi-assert": "0.0.3",
-    "mocha": "^3.2.0",
-    "mochawesome": "^2.0.2",
     "nightwatch": "^0.9.12",
-    "selenium-server": "2.53.1",
-    "supertest": "^2.0.1"
+    "selenium-server": "2.53.1"
   }
 }
