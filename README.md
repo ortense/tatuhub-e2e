@@ -1,4 +1,4 @@
-# Templeta para testes E2E com node
+# Template para testes E2E com node
 
 Como rodar:
 
